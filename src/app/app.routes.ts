@@ -8,4 +8,11 @@ export const routes: Routes = [
         m => m.MemoryLeakComponent
       ),
   },
+  {
+    path: 'dialog-to-parent',
+    loadComponent: () =>
+      import(
+        './features/dialog-to-parent/dialog-parent/dialog-parent.component'
+      ).then(m => m.DialogParentComponent),
+  },
 ];
