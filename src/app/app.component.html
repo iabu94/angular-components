@@ -1,3 +1,13 @@
 <h1>Angular Components</h1>
 
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="./">Home</button>
+  <button mat-menu-item routerLink="./memory-leak">Memory Leak</button>
+  <button mat-menu-item routerLink="./dialog-to-parent">Dialog to Parent</button>
+  <button mat-menu-item routerLink="./invalid-focus">Invalid Focus</button>
+</mat-menu>
+
+<mat-divider />
+
 <router-outlet />

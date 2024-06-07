@@ -1,0 +1,19 @@
+<h4>Focus to Invalid Component</h4>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <button type="submit" mat-raised-button>Save</button>
+  <mat-form-field>
+    <mat-label>First Control</mat-label>
+    <input id="firstControl" matInput formControlName="firstControl" />
+  </mat-form-field>
+  <div>
+    <p>Some loop for paragraph</p>
+    @for (element of someElements; track $index) {
+      <p>Some element</p>
+    }
+  </div>
+  <mat-form-field>
+    <mat-label>Second Control</mat-label>
+    <input id="secondControl" matInput formControlName="secondControl">
+  </mat-form-field>
+</form>

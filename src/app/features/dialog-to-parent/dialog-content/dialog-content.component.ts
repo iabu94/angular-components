@@ -1,6 +1,6 @@
 import { Component, Inject, signal, WritableSignal } from '@angular/core';
 import {
-  MAT_DIALOG_DATA,
+  MAT_DIALOG_DATA, MatDialogClose,
   MatDialogContent,
   MatDialogTitle,
 } from '@angular/material/dialog';
@@ -10,7 +10,7 @@ import { Subject } from 'rxjs';
 @Component({
   selector: 'app-dialog-content',
   standalone: true,
-  imports: [MatDialogContent, MatDialogTitle, MatButton],
+  imports: [MatDialogContent, MatDialogTitle, MatButton, MatDialogClose],
   templateUrl: './dialog-content.component.html',
   styleUrl: './dialog-content.component.scss',
 })
